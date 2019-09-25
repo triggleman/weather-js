@@ -1,9 +1,13 @@
 $(document).ready(function() {
-    $("button").click(function(){
-        var val = document.getElementById("input").value;
+    console.log('this is running');
 
-        alert(val);
-    })
+    $('#search').on('click', (e) => {
+        e.preventDefault();
+        const location = $('#location').value();
+        console.log(location);
+        
+    });
+    
 
 
 
